@@ -16,5 +16,5 @@ or for syncing through GitHub's SSH Transfer,
 
 Then to sync up:
 
-    repo sync -j6 --force-sync -f --no-tags --no-clone-bundle
+    repo sync -c -f -j8 --force-sync --no-clone-bundle --no-tags
 
