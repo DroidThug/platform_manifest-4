@@ -49,7 +49,7 @@
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="yu-aosp-n" />
   <project path="packages/providers/TelephonyProvider" name="platform_packages_providers_TelephonyProvider" remote="yu-aosp-n" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="yu-aosp-n" groups="pdk-fs" />
-  <project path="system/core" name="platform_system_core" remote="yu-aosp-n" groups="pdk" />
+  <project path="system/core" name="platform_system_core"  groups="pdk" revision="n-new" remote="yu-aosp-n" />
   <project path="system/extras" name="platform_system_extras" remote="yu-aosp-n"  groups="pdk" />
   <project path="system/media" name="platform_system_media" remote="yu-aosp-n" groups="pdk" />
   <project path="system/vold" name="platform_system_vold"  remote="yu-aosp-n" groups="pdk" />  
