@@ -17,7 +17,7 @@
            revision="refs/heads/staging/cm-14.0" />
 
 <!-- BEGIN YU-AOSP-N -->  
-  <project path="build" name="platform_build" remote="yu-aosp-n" revision="n" groups="pdk,tradefed" >
+  <project path="build" name="platform_build" remote="yu-aosp-n" revision="n-new" groups="pdk,tradefed" >
   <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="art" name="platform_art" remote="yu-aosp-n" groups="pdk" />
@@ -55,21 +55,24 @@
   <project path="system/vold" name="platform_system_vold"  remote="yu-aosp-n" groups="pdk" />  
   <project path="vendor/aosp" name="platform_vendor_aosp" remote="yu-aosp-n" />
 <!-- END YU-AOSP-N -->  
-  
+
+<!-- BEGIN Device HALS -->
+  <project path="hardware/qcom/audio-caf/msm8916" name="platform_hardware_qcom_audio" groups="qcom,qcom_audio" revision="n-caf-8916" remote="yu-aosp-n" />
+  <project path="hardware/qcom/display-caf/msm8916" name="platform_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="n-caf-8916" remote="yu-aosp-n" />
+  <project path="hardware/qcom/media-caf/msm8916" name="platform_hardware_qcom_media" groups="qcom" revision="n-caf-8916" remote="yu-aosp-n" />
+<!-- END Device HALS -->
+
 <!-- BEGIN CYANOGENMOD -->
   <project path="build/kati" name="android_build_kati" groups="pdk,tradefed" remote="cm" />
   <project path="external/libncurses" name="android_external_libncurses" remote="cm" />
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" groups="qcom" remote="cm" />
   <project path="hardware/qcom/bt-caf" name="android_hardware_qcom_bt" revision="staging/cm-14.0-caf" remote="cm" />
   <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="cm" />
-  <project path="hardware/qcom/audio-caf/msm8916" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="staging/cm-14.0-caf-8916" remote="cm" />
   <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" groups="qcom" remote="cm" />
   <project path="hardware/qcom/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="cm" />
-  <project path="hardware/qcom/display-caf/msm8916" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="staging/cm-14.0-caf-8916" remote="cm" />
   <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" groups="qcom,qcom_gps" remote="cm" />
   <project path="hardware/qcom/wlan-caf" name="android_hardware_qcom_wlan" groups="qcom_wlan" revision="staging/cm-14.0-caf" remote="cm" />
   <project path="hardware/qcom/media/default" name="android_hardware_qcom_media" groups="qcom" remote="cm" />
-  <project path="hardware/qcom/media-caf/msm8916" name="android_hardware_qcom_media" groups="qcom" revision="staging/cm-14.0-caf-8916" remote="cm" />
   <project path="hardware/ril" name="android_hardware_ril" remote="cm" groups="pdk" />
   <project path="hardware/ril-caf" name="android_hardware_ril" remote="cm" revision="staging/cm-14.0-caf" groups="pdk" />
   <project path="vendor/qcom/opensource/dpm" name="android_vendor_qcom_opensource_dpm" remote="cm" />
