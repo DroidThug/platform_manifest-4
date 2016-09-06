@@ -6,6 +6,12 @@
            remote="aosp"
            sync-j="4" />
            
+  <remote  name="yu-aosp-n"
+           fetch="https://github.com/yu-aosp-n"
+           revision="refs/heads/n" />
+           
+  <include name="aosp-n.xml" />
+           
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
   <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" >
     <linkfile src="root.bp" dest="Android.bp" />
