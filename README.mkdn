@@ -18,7 +18,8 @@ Then to sync up:
 
     repo sync -c -f -j8 --force-sync --no-clone-bundle --no-tags
     
-How to build ?
+How to build:
+    
     $  . build/envsetup.sh && lunch aosp_(device)-(buildtype) -- EX: . build/envsetup.sh && lunch aosp_tomato-eng
     $  make otapackage -j4
 
