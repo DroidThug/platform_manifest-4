@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="aosp"
-           fetch=".." />
+           fetch="https://android.googlesource.com" />
   <default revision="refs/tags/android-7.0.0_r4"
            remote="aosp"
            sync-j="4" />
            
   <remote  name="yu-aosp-n"
-           fetch="https://github.com/yu-aosp-n"
+           fetch=".."
            revision="refs/heads/n" />
            
   <include name="aosp-n.xml" />
